@@ -1,0 +1,72 @@
+-----------
+| Summary |
+-----------
+
+Inventory Management Application to demonstrate CRUD Operations with Authentication.
+
+---------------
+| Sample REST API |
+---------------
+
+Please download or git clone the Sample REST API repository from the following link.
+
+https://github.com/....
+
+Run the following commands to run the sample API on your machine.
+
+cd sample-rest-api
+npm install
+node .
+
+Sample output on successful run
+--------------------------------
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+
+Read API docs by opening “Mindfire Sample REST API Docs.txt” file.
+
+In case of any error
+---------------------
+Please make sure that you have latest LTS version of NodeJS installed and the PORT 3000 is not open/being used by any other application.
+
+
+---------------------
+| Assignment Detail |
+---------------------
+Create a login screen with username and password as 2 fields. Once user logins successfully, he should be navigated to products page. (via /products angular routing)
+
+Products page should contain 3 components .
+
+1. Product List Component
+        - Shows list of products with fields as id and name.
+
+2. Product Detail Component
+        - Shows an angular form for reading, creating, updating and removing product. [Fields : name , price , rating (Use below Rating Component against rating label)]
+        - Upon clicking on product name of Product List component, it should auto populate product info in Product Detail Component.
+
+3. Rating Component
+    - It simply shows a dropdown/select HTML element with 5 values ranging from 1 to 5.
+   - This component should be a field inside product detail component (against the Rating field label of the Product Detail Component).
+
+4. Stock Component
+	- This component will show 2 values - Products Count and Products Price Total.
+	- When the user performs any CRUD operations in the Products Detail component, then the Stock Component data should get updated in realtime. For example, if there are 5 products of $100 each in the database, then if you delete one product, then the count should show as 4 and the total price should show as $400.
+
+There should be logout button on top navbar of products page.
+
+NOTE: Feel free to use any third party CSS frameworks like Bootstrap, Angular Material, etc.
+
+------------------
+| Delivery Steps |
+------------------
+
+1. Create a Github repository named as ‘InventoryManagementApp’ or any name relates to above requirement, using your Github account and share link to the repository via email, as soon as you are ready to kick-off.
+2. Kick off your development, expected to be done in 4-6 hours.
+3. Once development and testing is done, check-in all your code to you Github repository and send us a confirmation email.
+4. Please your Production Build in the dist folder in the ‘InventoryManagementApp’ repository.
+
+-----------
+| Contact |
+-----------
+
+In case of any questions contact Kiran @ +91 9937087460

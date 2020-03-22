@@ -1,0 +1,88 @@
+.app {
+  text-align: center;
+}
+
+//common
+.btn {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+//login form
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login__wrapper {
+    min-width: 500px;
+    border: 1px solid #007bff;
+  }
+
+  .form__wrapper {
+    padding: 0 20px;
+  }
+  .login_btn {
+    width: 100%;
+  }
+}
+
+//products
+
+.products {
+  padding-bottom: 100px;
+  .logout_btn {
+    border: 1px solid white;
+    min-width: 112px;
+  }
+
+  //product list
+  .product__list {
+    border: 1px solid #007bff;
+    .list {
+      margin: 20px;
+      border: 1px solid #80808045;
+      ul {
+        li {
+          transition: all 0.3s;
+          padding: 12px;
+          &:not(:last-child) {
+            border-bottom: 1px solid #80808045;
+          }
+          &:hover {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+      .active {
+        background: #007bff;
+        color: white;
+      }
+    }
+  }
+
+  .product_details {
+    border: 1px solid #007bff;
+    padding-bottom: 14px;
+    .product_form {
+      margin: 0 20px;
+    }
+  }
+}
